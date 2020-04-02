@@ -13,7 +13,7 @@
         <meta name="description" content="Repository Matakuliah Data Mining">
       
       
-        <link rel="canonical" href="https://syahrullah26.github.io/datamining/Missing Value/">
+        <link rel="canonical" href="https://syahrullah26.github.io/datamining/richardson/">
       
       
         <meta name="author" content="Muhammad Syahrullah">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Missing Value - Muhammad Syahrullah</title>
+        <title>Richardson - Muhammad Syahrullah</title>
       
     
     
@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#missing-value-with-k-nearest-neighbor" tabindex="1" class="md-skip">
+      <a href="#richardson-extrapolation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Missing Value
+                Richardson
               
             </span>
           
@@ -253,12 +253,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       Penambangan Data
@@ -310,56 +308,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Missing Value
-      </label>
-    
-    <a href="./" title="Missing Value" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../Missing Value/" title="Missing Value" class="md-nav__link">
       Missing Value
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#imputasi-dengan-metode-knn" class="md-nav__link">
-    Imputasi dengan Metode KNN
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kelemahan-dan-keuntungan-knn" class="md-nav__link">
-    Kelemahan dan Keuntungan KNN
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -420,10 +373,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Komputasi Numerik
@@ -499,11 +454,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../richardson/" title="Richardson" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Richardson
+      </label>
+    
+    <a href="./" title="Richardson" class="md-nav__link md-nav__link--active">
       Richardson
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teori" class="md-nav__link">
+    Teori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contoh-program" class="md-nav__link">
+    Contoh Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -533,15 +540,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#imputasi-dengan-metode-knn" class="md-nav__link">
-    Imputasi dengan Metode KNN
+  <a href="#teori" class="md-nav__link">
+    Teori
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kelemahan-dan-keuntungan-knn" class="md-nav__link">
-    Kelemahan dan Keuntungan KNN
+  <a href="#contoh-program" class="md-nav__link">
+    Contoh Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
   </a>
   
 </li>
@@ -563,75 +577,73 @@
               
                 
                 
-                <h1 id="missing-value-with-k-nearest-neighbor">Missing Value with K Nearest Neighbor<a class="headerlink" href="#missing-value-with-k-nearest-neighbor" title="Permanent link">&para;</a></h1>
+                <h1 id="richardson-extrapolation"><strong>Richardson Extrapolation</strong><a class="headerlink" href="#richardson-extrapolation" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><em>Missing Data merupakan suatu informasi yang tidak tersedia dalam suatu data. Missing data mempengaruhi hasil penelitian karena keberadaan missing data dapat mengurangi tingkat akurasi dari hasil penelitian. Missing data dapat diatasi dengan imputasi. Imputasi merupakan suatu metode yang mengatasi missing data dengan mengisi nilai yang hilang dengan suatu nilai berdasarkan informasi lain yang didapat dari data tersebut.</em></p>
+<p>Dalam analisis numerik, Richardson Extrapolation adalah metode percepatan urutan, yang digunakan untuk meningkatkan laju konvergensi suatu urutan. </p>
+<p>Richardson Extrapolation termasuk integrasi Romberg, yang menerapkan ekstrapolasi Richardson pada aturan trapesium, dan algoritma Bulirsch-Stoer untuk menyelesaikan persamaan diferensial biasa.</p>
 </blockquote>
-<p>Salah satu metode imputasi yaitu metode K Nearest Neighbor(KNN). Penelitian itu dilakukan untuk memprediksi seluruh nilai yang hilang dengan metode KNN. KNN bekerja dengan menghitung weight mean estimation berdasarkan jumlah K. K yaitu jumlah observasi terdekat yang akan digunakan. Dalam penelitian ini, K yang digunakan yaitu K = 1, K = 5, K = 10, K = 15, dan K=20. Mean Square Error (MSE) dan Mean Absolute Percentage Error (MAPE) digunakan untuk mengetahui ketepatan hasil imputasi. Berdasarkan seluruh nilai rata-rata MSE dan MAPE dari 10 replikasi, KNN terbaik pada missing data 10% dan 20% terjadi pada saat K = 10, sedangkan untuk missing data 30% terjadi saat K = 15.</p>
-<h3 id="imputasi-dengan-metode-knn">Imputasi dengan Metode KNN<a class="headerlink" href="#imputasi-dengan-metode-knn" title="Permanent link">&para;</a></h3>
-<p>Salah satu metode yang sering digunakan untuk permasalahan imputasi missing data adalah yaitu KNN. Metode ini merupakan metode sederhana dan fleksibel karena dapat digunakan baik pada variabel dengan data kontinu maupun data diskrit (Mawarsari, 2012). Algoritma KNN :</p>
-<ul>
-<li>Tentukan Nilai K</li>
-<li>Tentukan jarak Euclidian antar instance pada dataset Dm dan dataset Dc </li>
-<li>Imputasi data hilang dengan seluruh rata-rata k tetangga terdekat di Dc </li>
-</ul>
-<h3 id="kelemahan-dan-keuntungan-knn">Kelemahan dan Keuntungan KNN<a class="headerlink" href="#kelemahan-dan-keuntungan-knn" title="Permanent link">&para;</a></h3>
-<p>Keuntungan KNN metode ini dapat bisa digunakan untuk data yang bersifat kualitatif maupun kuantitatif, tanpa perlu sedikit membuat model prediksi, algoritma sederhana, KNN dibutuhkan untuk pertimbangan struktur korelasi data  (Acuna, 2004). Sedangkan kelemahan KNN adalah adanya pemilihan fungsi jarak, dapat menggunakan Euclidean, Manhattan, Mahalanobis dan Pearson.</p>
-<div class="codehilite"><pre><span></span><span class="c1"># importing pandas as pd </span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span> 
+<h3 id="teori"><strong>Teori</strong><a class="headerlink" href="#teori" title="Permanent link">&para;</a></h3>
+<p>Dalam rumus :</p>
+<p><strong><em>( f (x + h) - f (x - h) ) / (2 h)</em></strong></p>
+<p>untuk nilai h yang sangat kecil, dua fungsi evaluasi <em>f (x + h)</em> dan <em>f (x - h)</em> akan menjadi kira-kira sama, dan oleh karena itu pembatalan subtraktif akan terjadi. Oleh karena itu, tidak disarankan untuk menggunakan nilai h yang semakin kecil.</p>
+<p>Kita dapat mencoba untuk memperkirakan nilai tepat <em>e</em> dengan perkiraan <em>a(h)</em>. Dalam hal ini, <em>e</em> adalah turunan dari <em>f (1) (x)</em> dan perkiraannya adalah <em>( h ) = (f (x + h) - f (x - h)) / (2 h)</em>. Misalkan sekarang bahwa kesalahan aproksimasi didefinisikan oleh serangkaian bentuk Taylor :</p>
+<p align = "center"><i>e = a(h) + K h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-<span class="c1"># importing numpy as np </span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> 
+<p>Apabila menggunakan <em>h / 2</em> :</p>
+<p align = "center"><i>e = a(h/2) + K (h/2)n + o((h/2)n)</i>
+<br><i>= a(h/2) + K/2n h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-<span class="c1"># dictionary of lists </span>
-<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;First Score&#39;</span><span class="p">:[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span> 
-        <span class="s1">&#39;Second Score&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span> 
-        <span class="s1">&#39;Third Score&#39;</span><span class="p">:[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">98</span><span class="p">]}</span> 
+<p>Mengalikan kedua ekspresi ini dengan 2<em>n</em> dan mengurangi hasil persamaan pertama</p>
+<p align = "center"><i>2n<sup>e</sup> − e = 2na(h/2) − a(h) + K/2n h<sup>n</sup> − K h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-<span class="c1"># creating a dataframe from dictionary </span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span> 
+<p>Perhatikan bahwa istilah h<sup>n</sup> dibatalkan dan kita dibiarkan dengan</p>
+<p align = "center"><i>(2n − 1)e = 2na(h/2) − a(h) + o(h<sup>n</sup>)</i></p>
 
-<span class="c1"># filling missing value using fillna()   </span>
-<span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+<p>Jika kita melihat seri Taylor lengkap untuk rumus perbedaan-terpusat yang terpusat, kita perhatikan bahwa istilah kesalahannya dalam bentuk Knh<sup>n</sup>. Dapat kita tulis dengan :</p>
+<p align = center><i>K1 = −1/6 f(3)(x)h<sup>2</sup>, etc.</i></p>
+
+<h3 id="contoh-program"><strong>Contoh Program</strong><a class="headerlink" href="#contoh-program" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">Z</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">Z</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Z</span>
+
+<span class="k">def</span> <span class="nf">D</span><span class="p">(</span><span class="n">Func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">-</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">h</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Richardson_dif</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">):</span> 
+    <span class="sd">&#39;&#39;&#39;Richardson extrapolation method for numerical calculation of first derivative &#39;&#39;&#39;</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">9</span> 
+    <span class="n">L</span><span class="o">=</span><span class="n">zeros</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">I</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="n">L</span><span class="p">[</span><span class="n">I</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">D</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">I</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">j</span><span class="p">):</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">))</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; DIFERENSIASI NUMERIK DARI &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;f = -0.1*x**4-0.15*x**3-0.5*x**2-0.25*x+1.2 dengan x = 0.5&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;diff(2**cos(pi+sin(x)) dengan x = pi/2 adalah = </span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>First Score</th>
-      <th>Second Score</th>
-      <th>Third Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="hasil-running"><strong>Hasil Running</strong><a class="headerlink" href="#hasil-running" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">DIFERENSIASI</span> <span class="n">NUMERIK</span> <span class="n">DARI</span> <span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+<span class="o">=======================================================================</span>
+<span class="n">f</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="n">dengan</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="o">=======================================================================</span>
+<span class="o">-</span><span class="mf">0.91250000000000530687</span>
+<span class="o">=======================================================================</span>
+<span class="n">diff</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="n">dengan</span> <span class="n">x</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span> <span class="n">adalah</span> <span class="o">=</span> <span class="mf">0.16849558398154249050</span>
+<span class="o">&gt;&gt;&gt;</span> 
+</pre></div>
                 
                   
                 
@@ -652,7 +664,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Mengukur Jarak Data/" title="Mengukur Jarak Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Romberg/" title="Romberg" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -661,25 +673,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mengukur Jarak Data
+                Romberg
               </span>
             </div>
           </a>
         
-        
-          <a href="../Decision Tree/" title="Decision Tree" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Decision Tree
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
