@@ -1,78 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://syahrullah26.github.io/datamining/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/Isi/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Mengukur Jarak Data/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Mengukur%20Jarak%20Data/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Missing Value/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Missing%20Value/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Decision Tree/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Decision%20Tree/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Tugas 5 - Clustering (1)/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Tugas%205%20-%20Clustering%20%281%29/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Tugas 6 - Fuzzy C-Means/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Tugas%206%20-%20Fuzzy%20C-Means/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Tugas 7 - Regresi Linier Sederhana dan Berganda/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Tugas%207%20-%20Regresi%20Linier%20Sederhana%20dan%20Berganda/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/Home/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/tugas1/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Numerical Solution/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Numerical%20Solution/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://syahrullah26.github.io/datamining/Eliminasi Gauss/</loc>
-     <lastmod>2020-04-25</lastmod>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/Eliminasi%20Gauss/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/Romberg/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/richardson/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://syahrullah26.github.io/datamining/Tugas5/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <lastmod>2020-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://syahrullah26.github.io/datamining/MonteCarlo/</loc>
+     <lastmod>2020-06-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
